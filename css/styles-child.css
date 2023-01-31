@@ -1,0 +1,233 @@
+#mainNav .navbar-brand {
+    height: 8rem;
+    transition: height 0.3s ease-in-out;
+}
+
+#mainNav.navbar-shrink .navbar-brand svg,
+#mainNav.navbar-shrink .navbar-brand {
+    height: 3.85rem;
+}
+
+#mainNav.navbar-shrink .navbar-brand svg,
+#mainNav.navbar-shrink .navbar-brand img {
+    height: 100%;
+}
+
+h2 {
+    color: #149FC6;
+}
+
+.gold {
+    color: #D3982B;
+    padding-top: 1.5em;
+}
+
+.blue {
+    color: #149FC6;
+    padding-top: 1.5em;
+}
+
+footer {
+    background-color: #212529;
+}
+
+img.footer-logo {
+    height: 8em;
+}
+
+.gradient-custom {
+    background: radial-gradient(50% 123.47% at 50% 50%, #149FC6 0%, #3a3739 100%), linear-gradient(121.28deg, #243501 0%, #3a0404 100%), linear-gradient(360deg, #323235 0%, #a1b884 100%), radial-gradient(100% 164.72% at 100% 100%, #0e071a 0%, #262727 100%), radial-gradient(100% 148.07% at 0% 0%, #333104 0%, #0c1804 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+
+.text-white {
+    color: whitesmoke;
+}
+
+
+/*-------------contact Page--------------*/
+
+header.masthead-contact {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("../assets/img/header_unsplash_12.jpg ");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+h3.text-center.white {
+    color: antiquewhite;
+}
+
+
+/*-------------Bait Shop Page--------------*/
+
+header.masthead-bait {
+    padding-top: 10.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color: #fff;
+    background-color: #212529;
+}
+
+.hr-theme-slash-2 {
+    display: flex;
+}
+
+.hr-line {
+    width: 100%;
+    position: relative;
+    margin: 15px;
+    border-bottom: 1px solid #212529;
+}
+
+.hr-icon {
+    position: relative;
+    top: 3px;
+    color: #ff0000;
+}
+
+
+/* Boat Rentals */
+
+header.masthead-boat {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("../assets/img/header-boat.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 32rem;
+}
+
+h1.modal-header.boat {
+    color: whitesmoke;
+}
+
+
+/* Camping Page  */
+
+header.camping {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("../assets/img/header-camping.PNG");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 33rem;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.75);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+/* Card carousel  */
+
+.carousel {
+    margin-top: -20px !important
+}
+
+.button {
+    position: relative
+}
+
+.button button {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    border-radius: 9px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.button button:hover {
+    background-color: #bf6e0e;
+    font-weight: bold;
+    letter-spacing: 1px
+}
+
+.button p {
+    position: absolute;
+    right: 10px;
+    top: 24px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.button:hover p {
+    font-weight: bold !important;
+    letter-spacing: 1px !important
+}
+
+
+/*--------general media queries----------*/
+
+@media only screen and (max-width: 768px) {
+    /* about page----------*/
+    header.masthead .masthead-heading {
+        font-size: 2rem;
+    }
+    #mainNav .navbar-brand img {
+        height: 14rem;
+    }
+    .page-section {
+        padding: 1em;
+    }
+    h6 {
+        font-size: 90%;
+    }
+    .logo-sm {
+        width: 40%;
+    }
+    .resp-img {
+        width: 100%;
+    }
+    .pad {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h6 {
+        font-size: 75%;
+    }
+    .container {
+        padding-right: 10%;
+    }
+    .card {
+        margin-left: 10%;
+    }
+    h1.modal-header {
+        font-size: .75em;
+    }
+    #mainNav .navbar-brand {
+        height: 4rem;
+        transition: height 0.3s ease-in-out;
+    }
+}
